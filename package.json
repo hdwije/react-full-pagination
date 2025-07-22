@@ -13,6 +13,7 @@
   },
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --out-dir dist",
+    "dev": "tsup src/index.tsx --format esm,cjs --dts --out-dir dist --watch",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "format": "prettier --write 'src/**/*.{ts,tsx,js,jsx,json,css,md}'",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -44,6 +45,7 @@
     "@typescript-eslint/eslint-plugin": "^8.37.0",
     "@typescript-eslint/parser": "^8.37.0",
     "autoprefixer": "^10.4.21",
+    "concurrently": "^9.2.0",
     "eslint": "^9.31.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-react": "^7.37.5",
