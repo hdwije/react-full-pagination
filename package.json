@@ -2,8 +2,17 @@
   "name": "react-full-pagination",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
   "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --out-dir dist",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "format": "prettier --write 'src/**/*.{ts,tsx,js,jsx,json,css,md}'",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +24,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/hdwije/react-full-pagination/issues"
   },
