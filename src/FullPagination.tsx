@@ -18,8 +18,8 @@ export function FullPagination() {
         <div className={pageClasses}>{'>>'}</div>
       </div>
       <div className="col-span-2 grid grid-cols-12 items-center border p-2">
-        <div className="col-span-7">Show</div>
-        <select className="col-span-5 rounded-md border border-gray-400 p-2 font-light text-gray-800">
+        <div className="col-span-6">Show</div>
+        <select className="col-span-6 rounded-md border border-gray-400 p-2 font-light text-gray-800">
           <option value="10">10</option>
           <option value="10">20</option>
           <option value="10">50</option>
